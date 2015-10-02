@@ -1,0 +1,88 @@
+body{
+  		padding: 100px 100px;
+  		background-color: #FFFFFF;
+  		padding: 25px 15px 25px 10px;
+  		font: 20px ;
+  		color: 
+  		font-family: Arial, Helvetica, sans-serif;
+  	}
+  		
+h2{
+  		font-size: 40px;
+  		padding: 0px 40px 0px 10px;
+  		display: block;
+  		margin: auto;
+  		float: center;
+  		color:#E60000;
+  	}
+  	
+
+span {
+      display: inline-block;
+      width: 100px;
+      font-size:17px;
+      font-family:  sans-serif;
+      color:#E60000;
+      }
+    
+label{
+    	color:#E60000;
+    }
+    
+.center{
+    	margin: auto;
+    	width:35%;
+    	border : 5px solid #E60000 ;
+    	padding:50px 50px ;
+    	background-color:#FFD700;
+     }
+     
+.header{
+	background-color:#FFD700;
+	
+}
+     
+form#workshop-form input, form#workshop-form select{
+  		font-size: 18px;
+			line-height: 1.6em;
+			border: 1px solid #eee;
+      box-shadow:  none;
+			border-radius: 2px;
+	}
+
+form#workshop-form input:focus,form#workshop-form select:focus {
+    	transition: box-shadow 0.3s, border 0.3s;
+      }
+        
+form#workshop-form div.column1{
+    	float: left;
+			padding-left: 20px;
+			margin-right: 20px;
+			width: 160px;
+    }
+      
+      
+      
+ form#workshop-form div.column2{
+    	float: right;
+	margin-right: 20px;
+	width: 170px;
+    }
+      
+      
+      /* added for error message on form */
+#error-msg {
+    font-size: 1.3em;
+    color: #f00;
+}
+   
+        
+
+
+    
+    	
+
+	
+  
+
+

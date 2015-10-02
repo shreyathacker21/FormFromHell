@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang='en'>
+<head>
+  <meta charset='utf-8' />
+  <title>Contact Form</title>
+  <link href="style.css" rel="stylesheet">
+</head>
+
+<body>
+  	
+  <div class="header">
+  		
+  </div>
+  <div class="center">
+  	 <h2> Volunteering Form </h2> 
+  	</br>
+  	<span>* Mandatory  </span>
+  	
+  	<form id="workshop-form"
+        method="post"
+        action="submit.html" onsubmit="return validate()">
+     
+    </br></br>
+     <span>*Name:</span>
+ 		 <input type="text" id="name" name="name" 
+     maxlength="20" size="20"
+     title="Please enter your name"  pattern=".+[A-Za-z]"
+     placeholder="Enter your name"  > 
+     <br/><br/>
+    
+     <span>*E-mail</span>
+     <input type="email" id="email" name="email"
+     placeholder="xyz@example.com" title="xyz@example.com" >
+     <br/><br/>
+   
+     <span>*UID</span>
+     <input type="text" id="uid" name="uid" 
+      maxlength="10" size="10"
+      placeholder="University ID" pattern="^[0-9]+$" title="Numeric digits only"/>
+     <br/><br/>
+  
+     <span>*Address: </span>
+ 		 <input type="text" id="addr" name="addr" 
+      maxlength="20" size="20" 
+      placeholder="Address"   />
+      <br/><br/>
+  
+     <span>*State</span>
+     <input type="text" id="state" name="state" 
+      maxlength="2" size="2" 
+      placeholder="State" pattern="[A-Z]{2}" title="eg. NY" />
+     
+     
+     <br/><br/>
+    
+     <span>Zip Code:</span>
+     <input type="text" id="zip "name="zip" 
+     maxlength="5" size="10" placeholder="Enter Zip Code" pattern="(\d{5}([\-]\d{4})?)" title="xxxxx or xxxxx-xxxx" />
+     <br/><br/>
+   
+      <span>*Contact:</span>
+      <input type="text" id="phone" name="phone" 
+      maxlength="20" size="20"
+      pattern="\d{3}[\-]\d{3}[\-]\d{4}" placeholder="###-###-####" 
+      title="###-###-####"  />   
+      <br/><br/>
+ 			</br>
+ 			
+   		<span>Interest:</span>
+    	<div class="info">
+    	<div class="column1">
+    	<p>
+    		<input type="checkbox" id="education" name="education"
+    		value="education"/>
+   			<label for="reply">Education</label>
+   		</p>
+   		
+   		<p>
+   			<input type="checkbox" id="env" name="env"
+      	 value="env"/>
+      	<label for="reply">Envionment</label>
+      
+   		</p>
+    		
+    	<p>
+    		<input type="checkbox" id="health" name="health"
+       	value="health"/>
+      	<label for="reply">Health</label>
+    		
+    	</p>
+    	</div>
+    	<div class="column2">
+    	<p>
+    		<input type="checkbox" id="art" name="art"
+       value="art"/>
+      	<label for="reply">Children</label>
+    	</p>
+    		
+    	<p>
+    		<input type="checkbox" id="human" name="human"
+       	value="human"/>
+      	<label for="reply">Human Rights</label>
+    	</p>
+    		
+    	<p>
+    		<input type="checkbox" id="ss" name="ss"
+       	value="ss"/>
+      	<label for="reply">Social Services</label>
+    	</p>
+   	 	</div>
+    	<p>
+    		<span>Comments:</span>
+   	 		</br>
+    		<textarea name ="comments" id="comments" cols="55" rows="6" tabindex="270" placeholder="Comments">
+    		</textarea>
+   		</p>
+   		</div>
+
+    	<div id="error-msg"></div>
+			</br>
+			<p>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		 		<input type="submit" id="submit"  value="Submit" />
+   			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    		<input type="reset"  value="Reset" />
+			</p>
+   
+  	</form>
+ 	</div>
+</div> 
+<script src="script.js"></script>
+</body>
+</html>
